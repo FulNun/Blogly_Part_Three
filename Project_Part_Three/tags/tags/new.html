@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Tag</title>
+</head>
+<body>
+    <h1>Add New Tag</h1>
+    <form method="POST" action="{{ url_for('tags.add_tag') }}">
+        <label for="name">Tag Name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Add Tag</button>
+    </form>
+    <a href="{{ url_for('tags.list_tags') }}">Back to Tags List</a>
+</body>
+</html>
